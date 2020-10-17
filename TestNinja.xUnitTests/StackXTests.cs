@@ -15,6 +15,7 @@ namespace TestNinja.xUnitTests
         {
             _stack = new Fundamentals.Stack<string>();
         }
+
         [Fact]
         public void Push_ObjectIsNull_ThrowArgumentNullException()
         {
@@ -53,6 +54,7 @@ namespace TestNinja.xUnitTests
                 _stack.Count.Should().Be(2);
             }
         }
+
         [Fact]
         public void Peek_ListCountisNull_ThrowInvalidOperationException()
         {
@@ -60,6 +62,7 @@ namespace TestNinja.xUnitTests
 
             func.Should().ThrowExactly<InvalidOperationException>();
         }
+
         [Fact]
         public void Peek_AddObjectsToStack_ReturnOnTheTopAndDoesNotRemoveIt()
         {

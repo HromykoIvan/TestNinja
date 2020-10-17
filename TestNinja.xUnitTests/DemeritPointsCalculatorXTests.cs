@@ -14,6 +14,7 @@ namespace TestNinja.xUnitTests
         {
             _calculator = new DemeritPointsCalculator();
         }
+
         [Theory]
         [InlineData(-5)]
         [InlineData(310)]

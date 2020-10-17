@@ -18,6 +18,7 @@ namespace TestNinja.xUnitTests
 
             errorLogger.LastError.Should().Be("a");
         }
+
         [Theory]
         [InlineData(null)]
         [InlineData("")]
@@ -29,6 +30,7 @@ namespace TestNinja.xUnitTests
 
             func.Should().ThrowExactly<ArgumentNullException>();
         }
+
         [Fact]
         public void Log_ValidError_RaiseErrorLoggedEvent()
         {

@@ -9,7 +9,6 @@ namespace TestNinja.xUnitTests
 {
     public class MathxTests
     {
-        //SetUp
         private Fundamentals.Math _math;
         public MathxTests()
         {
